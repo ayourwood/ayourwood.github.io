@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ورشة نجارة مغربية عالية الجودة - تصاميم عصرية بلمسة تراثية">
+    <title>ورشة النجارة العصرية | فن يتجدد بين يديك</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="wood-pattern">
+    
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 py-4" id="navbar">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3" data-aos="fade-down" data-aos-delay="100">
+                    <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
+                        <i class="fas fa-cube text-primary text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-white/90 heading-font">ورشة النجارة العصرية</h1>
+                        <p class="text-xs text-white/60">فن تراثي يتجدد</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8" data-aos="fade-down" data-aos-delay="200">
+                    <a href="#home" class="text-white/90 hover:text-accent transition-colors">الرئيسية</a>
+                    <a href="#process" class="text-white/90 hover:text-accent transition-colors">حرفتنا</a>
+                    <a href="#portfolio" class="text-white/90 hover:text-accent transition-colors">أعمالنا</a>
+                    <a href="#testimonials" class="text-white/90 hover:text-accent transition-colors">آراء العملاء</a>
+                    <a href="#contact" class="text-white/90 hover:text-accent transition-colors">اتصل بنا</a>
+                    
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/+212710169569" target="_white/80" 
+                       class="btn-glow bg-accent text-white/70 px-6 py-2 rounded-full font-medium flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white text-2xl" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu fixed top-0 right-0 w-80 h-full bg-primary z-50 p-8" id="mobileMenu">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl text-white heading-font">القائمة</h2>
+                <button id="closeMenuBtn" class="text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-6">
+                <a href="#home" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">الرئيسية</a>
+                <a href="#process" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">حرفتنا</a>
+                <a href="#portfolio" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">أعمالنا</a>
+                <a href="#testimonials" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">آراء العملاء</a>
+                <a href="#contact" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">اتصل بنا</a>
+                <a href="https://wa.me/212600000000" target="_blank" 
+                   class="btn-glow bg-accent text-primary px-6 py-3 rounded-full font-medium text-center mt-4">
+                    <i class="fab fa-whatsapp ml-2"></i>
+                    تواصل معنا
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-parallax min-h-screen flex items-center relative" 
+             style="background-image: url('assets/images/hero-wood.jpg')">
+        <div class="hero-overlay absolute inset-0"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 pt-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Decorative Element -->
+                <div class="flex justify-center mb-6" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="w-20 h-1 bg-accent rounded-full"></div>
+                </div>
+                
+                <!-- Main Headline -->
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight heading-font" 
+                    data-aos="fade-up" data-aos-delay="200">
+                    فن النجارة.. <span class="text-accent">تراث يتجدد</span> بين يديك
+                </h1>
+                
+                <!-- Sub-headline -->
+                <p class="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed" 
+                   data-aos="fade-up" data-aos-delay="400">
+                    نُحوّل أحلامك إلى تحف فنية خشبية.. تصاميم عصرية بالهوية المغربية الأصيلة
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="600">
+                    <!--a href="#portfolio" class="btn-glow bg-accent border-white text-primary px-10 py-4 rounded-2xl font-bold text-lg ">
+                        <i class="fas fa-eye ml-2"></i>
+                        اكتشف أعمالنا
+                    </a-->
+                    <a href="#contact" class="btn-glow bg-transparent border-2 border-white text-black px-10 py-4 rounded-2xl font-bold text-lg ">
+                        <i class="fas fa-eye ml-2"></i>
+                       اكتشف أعمالنا
+                    </a>
+                    <a href="#contact" class="btn-glow bg-transparent border-2 border-black text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue hover:text-primary transition-all">
+                        <i class="fas fa-calendar-alt ml-2"></i>
+                        احجز استشارة
+                    </a>
+                    
+                </div>
+                
+                <!-- Floating Wood Icon -->
+                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 float-animation" data-aos="fade-up" data-aos-delay="800">
+                    <a href="#process" class="text-black/60 text-3xl hover:text-accent transition-colors">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#FDFBF7] to-transparent"></div>
+    </section>
+
+    <!-- Process/Craftsmanship Section -->
+    <section id="process" class="bg-[#FDFBF7]">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-accent font-medium tracking-wider">كيف نعمل</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mt-2 heading-font">حرفتنا في ثلاث خطوات</h2>
+                <p class="text-lg text-primary/70 mt-4 max-w-2xl mx-auto">
+                    نتبع منهجية دقيقة لضمان جودة كل قطعة.. من الفكرة حتى التسليم
+                </p>
+            </div>
+            
+            <!-- Process Steps -->
+            <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Step 1 -->
+                <div class="process-step text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative inline-block mb-8">
+                        <div class="w-28 h-28 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
+                            <i class="fas fa-pencil-ruler text-accent text-4xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-accent flex items-center justify-center text-primary font-bold">
+                            1
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 heading-font">التصميم</h3>
+                    <p class="text-primary/70 leading-relaxed">
+                        نجلس معك لفهم رؤيتك.. ثم نرسم تصاميم ثلاثية الأبعاد حتى توافق ذوقك تماماً
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative inline-block mb-8">
+                        <div class="w-28 h-28 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
+                            <i class="fas fa-tree text-accent text-4xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-accent flex items-center justify-center text-primary font-bold">
+                            2
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 heading-font">اختيار الخشب</h3>
+                    <p class="text-primary/70 leading-relaxed">
+                        نختار أجود أنواع الأخشاب.. الأرز، الكركاع والبلوط من مصادر موثوقة
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step text-center" data-aos="fade-up" data-aos-delay="600">
+                    <div class="relative inline-block mb-8">
+                        <div class="w-28 h-28 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
+                            <i class="fas fa-hands text-accent text-4xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-accent flex items-center justify-center text-primary font-bold">
+                            3
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 heading-font">التشطيب</h3>
+                    <p class="text-primary/70 leading-relaxed">
+                        دهانات طبيعية وتذهيب.. تشطيب احترافي يعطي القطعة عمراً طويلاً
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-primary">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-accent font-medium tracking-wider">أعمالنا المميزة</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mt-2 heading-font">معرض إبداعاتنا</h2>
+                <p class="text-lg text-brown/60 mt-4 max-w-2xl mx-auto">
+                    تشكيلة متنوعة.. من المطابخ الفاخرة لغرف النوم وغرف المعيشة
+                </p>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Kitchen 1 -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/kitchen-1.jpg" 
+                         alt="مطبخ مغربي عصري" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80'">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2 heading-font">مطبخ مغربي عصري</h3>
+                            <p class="text-accent">تصميم عصري بلمسة تراثية</p>
+                            <span class="inline-block mt-4 px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bedroom 1 -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/images/bedroom-1.jpg" 
+                         alt="غرفة نوم فاخرة" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80'">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2 heading-font">غرفة نوم ملكية</h3>
+                            <p class="text-accent">تشطيب بالذهب الحقيقي</p>
+                            <span class="inline-block mt-4 px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Living Room -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/images/living-room.jpg" 
+                         alt="صالة استقبال" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80'">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2 heading-font">صالة استقبال</h3>
+                            <p class="text-accent">تصميم أنيق</p>
+                            <span class="inline-block mt-4 px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Custom Decor 1 -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="500">
+                    <img src="assets/images/decor-1.jpg" 
+                         alt="ديكور مخصص" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80'">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2 heading-font">وحدة جدارية مزخرفة</h3>
+                            <p class="text-accent">نقش مغربي يدوي</p>
+                            <span class="inline-block mt-4 px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kitchen 2 -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="600">
+                    <img src="assets/images/kitchen-2.jpg" 
+                         alt="مطبخ مفتوح" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80'">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2 heading-font">مطبخ مفتوح</h3>
+                            <p class="text-accent">تصميم حديث عصري</p>
+                            <span class="inline-block mt-4 px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Custom Decor 2 -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="700">
+                    <img src="assets/images/decor-2.jpg" 
+                         alt="خزانة كلاسيكية" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80'">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2 heading-font">خزانة كلاسيكية</h3>
+                            <p class="text-accent">عتيقة بتصميم حديث</p>
+                            <span class="inline-block mt-4 px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View More Button -->
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="800">
+                <a href="portfolio.html" class="btn-glow bg-transparent border-2 border-accent text-black px-8 py-3 rounded-full font-medium inline-flex items-center gap-2 hover:bg-black/40 hover:text-white transition-all">
+                    <i class="fas fa-images"></i>
+                    عرض المزيد
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-[#FDFBF7]">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <!--span class="text-accent font-medium tracking-wider">آراء عملائنا</span-->
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mt-2 heading-font">ما يقوله عملاؤنا</h2>
+                <p class="text-lg text-primary/70 mt-4 max-w-2xl mx-auto">
+                    نفخر بثقة عملائنا.. 
+                </p>
+            </div>
+            
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card rounded-2xl p-8 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-1 text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-primary/80 leading-relaxed mb-6">
+                        "ما شاء الله, مطبخي أصبح تحفة فنية.. فريق محترف جدا"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+                            B
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">BoTsila</h4>
+                            <p class="text-sm text-primary/60">agadir</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card rounded-2xl p-8 card-hover" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center gap-1 text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-primary/80 leading-relaxed mb-6">
+                        "ⴰⵢⵢⵓⵣ ⵏⵏⵓⵏ"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+                            D
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Dda_Bihi</h4>
+                            <p class="text-sm text-primary/60">Taroudant</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card rounded-2xl p-8 card-hover" data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex items-center gap-1 text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-primary/80 leading-relaxed mb-6">
+                        "Excellent travail! قطعة جميلة.. فريق جد محترم ومهني"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+                            BT
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Baheffo</h4>
+                            <p class="text-sm text-primary/60">Tiznit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-primary relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-accent/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <!-- <span class="text-accent font-medium tracking-wider">تواصل معنا</span>  -->
+                <h2 class="text-4xl md:text-5xl font-bold text-gray mt-2 heading-font">أحب أن أسمع منك</h2>
+                <p class="text-lg text-brown/60 mt-4 max-w-2xl mx-auto">
+                    جاهزون لتحويل فكرتك إلى حقيقة... راسلنا أو اتصل بنا
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <!-- Phone -->
+                    <div class="flex items-center gap-6 mb-8 p-6 bg-white/10 rounded-2xl hover:bg-white/30 transition-all">
+                        <div class="w-16 h-16 rounded-full bg-accent flex items-center justify-center text-primary text-2xl">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-brown font-bold text-lg mb-1">Phone</h3>
+                            <a href="tel:0710169569" class="text-black/100 hover:text-accent transition-colors">212710169569+</a>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp -->
+                    <div class="flex items-center gap-6 mb-8 p-6 bg-white/10 rounded-2xl hover:bg-white/30 transition-all">
+                        <div class="w-16 h-16 rounded-full bg-accent flex items-center justify-center text-primary text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-brown font-bold text-lg mb-1">Whatsapp</h3>
+                            <a href="https://wa.me/+212710169569" target="_blank" class="text-black/100 hover:text-accent transition-colors">تواصل فوري</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="flex items-center gap-6 mb-8 p-6 bg-white/10 rounded-2xl hover:bg-white/30 transition-all">
+                        <div class="w-16 h-16 rounded-full bg-accent flex items-center justify-center text-primary text-2xl">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-brown font-bold text-lg mb-1">e-mail</h3>
+                            <a href="mailto:info@warcha.ma" class="text-black/100 hover:text-accent transition-colors">warcha@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Location -->
+                    <div class="flex items-center gap-6 mb-8 p-6 bg-white/10 rounded-2xl hover:bg-white/30 transition-all">
+                        <div class="w-16 h-16 rounded-full bg-accent flex items-center justify-center text-primary text-2xl">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-brown font-bold text-lg mb-1">Location</h3>
+                            <p class="text-black/100">Morocco, Tarodant, Mhaita, Boutouil, 000
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="flex justify-center gap-4 mt-8">
+                        <a href="https://www.instagram.com/" class="w-12 h-12 rounded-full bg-brown/60 flex items-center justify-center text-black hover:bg-accent hover:text-primary transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" class="w-12 h-12 rounded-full bg-brown/60 flex items-center justify-center text-black hover:bg-accent hover:text-primary transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" class="w-12 h-12 rounded-full bg-brown/60 flex items-center justify-center text-black hover:bg-accent hover:text-red transition-all">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div data-aos="fade-right" data-aos-delay="400">
+                    <form class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm" id="contactForm" action="php/contact.php" method="POST">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-black/100 mb-2 text-sm">الاسم الكامل:</label>
+                                <input type="text" name="name" placeholder="ادخل اسمك هنا" required
+                                       class="w-full px-4 py-3 rounded-xl bg-brown/80 border border-brown/30 text-black placeholder-green/40 focus:border-accent focus:outline-none transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-black/100 mb-2 text-sm">رقم الهاتف:</label>
+                                <input type="tel" name="phone" placeholder="+212 6XXXXXXXX" 
+                                       class="w-full px-4 py-3 rounded-xl bg-brown/80 border border-brown/30 text-black placeholder-green/40 focus:border-accent focus:outline-none transition-colors">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-black/100 mb-2 text-sm">البريد الإلكتروني:</label>
+                            <input type="email" name="email" placeholder="example@email.com" 
+                                    class="w-full px-4 py-3 rounded-xl bg-brown/80 border border-brown/30 text-black placeholder-green/40 focus:border-accent focus:outline-none transition-colors">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-black/100 mb-2 text-sm">نوع المشروع:</label>
+                            <select name="project_type" class="w-full px-4 py-3 rounded-xl bg-brown/80 border border-brown/30 text-black placeholder-green/40 focus:border-accent focus:outline-none transition-colors">
+                                <option value="غرفة نوم">غرفة نوم</option>
+                                 <option value="ابواب">ابواب</option>
+                                <option value="مكتب">مكتب</option>
+                                <option value="ديكور مخصص">ديكور مخصص</option> 
+                                <option value="أخرى">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-black/100 mb-2 text-sm">تفاصيل المشروع:</label>
+                            <textarea name="message" rows="4" placeholder="صف مشروعك..." required
+                                      class="w-full px-4 py-3 rounded-xl bg-brown/80 border border-brown/30 text-black placeholder-green/40 focus:border-accent focus:outline-none transition-colors resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="btn-glow w-full bg-accent text-primary px-8 py-4 rounded-xl font-bold text-lg">
+                            <i class="fas fa-paper-plane ml-2"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a120e] py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
+                            <i class="fas fa-cube text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white heading-font">ورشة النجارة العصرية</h3>
+                            <p class="text-xs text-accent">فن تراثي يتجدد</p>
+                        </div>
+                    </div>
+                    <p class="text-white/60 max-w-md">
+                        منذ أكثر من 20 عاماً.. نُصنع أحلامك في الخشب.. تصاميم فريدة تجمع بين الأصالة والمعاصرة
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-white/60 hover:text-accent transition-colors">الرئيسية</a></li>
+                        <li><a href="#process" class="text-white/60 hover:text-accent transition-colors">حرفتنا</a></li>
+                        <li><a href="#portfolio" class="text-white/60 hover:text-accent transition-colors">أعمالنا</a></li>
+                        <li><a href="#contact" class="text-white/60 hover:text-accent transition-colors">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Working Hours -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">أوقات العمل</h4>
+                    <ul class="space-y-2 text-white/60">
+                        <li> الأثنين - الخميس</li>
+                        <li class="text-accent"> 8h00 - 19h00 </li>
+        
+                        <li id="current-day-name" class="font-bold text-white"></li>
+        
+                        <li>
+                            <span id="status-badge" class="px-2 py-1 rounded text-sm font-medium">
+                                جاري التحقق...
+                            </span>
+                        </li>
+                        </ul>
+                </div>
+             <!-- Divider -->
+                <div class="border-t border-white/10 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p class="text-white/60 text-sm">
+                            &copy;<span class="font-bold text-white"></span><a href="#home" class="text-white/60 hover:text-accent transition-colors"> WARCHA</a>
+                            All Rights Reserved 
+                        </p>
+                        <p class="text-white/60 text-sm">
+                            <i class="text-accent"> Made By </i>
+                            <a href="https://github.com/el-guemra-br" class="text-white/60 hover:text-accent transition-colors">el-guemra-br</a>
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 left-8 w-12 h-12 rounded-full bg-accent text-primary shadow-lg flex items-center justify-center opacity-0 invisible transition-all hover:bg-primary hover:text-accent z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

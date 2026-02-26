@@ -1,0 +1,601 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="معرض أعمال ورشة النجارة العصرية - أثاث، طاولات، أبواب، غرف نوم">
+    <title>معرض الأعمال | ورشة النجارة العصرية</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles (Main) -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Portfolio Page Specific Styles -->
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body class="wood-pattern">
+    
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 py-4" id="navbar">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <!-- Logo - Links back to homepage -->
+                <a href="index.html" class="flex items-center gap-3" data-aos="fade-down" data-aos-delay="100">
+                    <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
+                        <i class="fas fa-cube text-primary text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-white heading-font">ورشة النجارة العصرية</h1>
+                        <p class="text-xs text-accent">فن تراثي يتجدد</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8" data-aos="fade-down" data-aos-delay="200">
+                    <a href="index.html#home" class="text-white/90 hover:text-accent transition-colors">الرئيسية</a>
+                    <a href="index.html#process" class="text-white/90 hover:text-accent transition-colors">حرفتنا</a>
+                    <a href="portfolio.html" class="text-accent transition-colors">أعمالنا</a>
+                    <a href="index.html#testimonials" class="text-white/90 hover:text-accent transition-colors">آراء العملاء</a>
+                    <a href="index.html#contact" class="text-white/90 hover:text-accent transition-colors">اتصل بنا</a>
+                    
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/212600000000" target="_blank" 
+                       class="btn-glow bg-accent text-primary px-6 py-2 rounded-full font-medium flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white text-2xl" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu fixed top-0 right-0 w-80 h-full bg-primary z-50 p-8" id="mobileMenu">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl text-white heading-font">القائمة</h2>
+                <button id="closeMenuBtn" class="text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-6">
+                <a href="index.html#home" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">الرئيسية</a>
+                <a href="index.html#process" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">حرفتنا</a>
+                <a href="portfolio.html" class="text-accent text-lg py-2 border-b border-white/10">أعمالنا</a>
+                <a href="index.html#testimonials" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">آراء العملاء</a>
+                <a href="index.html#contact" class="text-white/90 hover:text-accent text-lg py-2 border-b border-white/10">اتصل بنا</a>
+                <a href="https://wa.me/212600000000" target="_blank" 
+                   class="btn-glow bg-accent text-primary px-6 py-3 rounded-full font-medium text-center mt-4">
+                    <i class="fab fa-whatsapp ml-2"></i>
+                    تواصل معنا
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Portfolio Page -->
+    <section class="min-h-[60vh] flex items-center relative" 
+             style="background-image: url('assets/images/hero-wood.jpg')">
+        <div class="hero-overlay absolute inset-0"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 pt-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Decorative Element -->
+                <div class="flex justify-center mb-6" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="w-20 h-1 bg-accent rounded-full"></div>
+                </div>
+                
+                <!-- Main Headline -->
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight heading-font" 
+                    data-aos="fade-up" data-aos-delay="200">
+                    معرض <span class="text-accent">إبداعاتنا</span>
+                </h1>
+                
+                <!-- Sub-headline -->
+                <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed" 
+                   data-aos="fade-up" data-aos-delay="400">
+                    تشكيلة متنوعة من أعمالنا·· أثاث، طاولات، أبواب، وغرف نوم
+                </p>
+                
+                <!-- Breadcrumb -->
+                <div class="flex items-center justify-center gap-2 text-white/60" data-aos="fade-up" data-aos-delay="600">
+                    <a href="index.html" class="hover:text-accent transition-colors">الرئيسية</a>
+                    <i class="fas fa-chevron-left text-xs"></i>
+                    <span class="text-accent">معرض الأعمال</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#2D1E17] to-transparent"></div>
+    </section>
+
+    <!-- Portfolio Section with Filtering -->
+    <section id="portfolio" class="bg-primary py-20">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-accent font-medium tracking-wider">أعمالنا المميزة</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2 heading-font">معرض إبداعاتنا</h2>
+                <p class="text-lg text-white/60 mt-4 max-w-2xl mx-auto">
+                   Explore our collection of handcrafted woodworking projects
+                </p>
+            </div>
+            
+            <!-- ============================================
+                 FILTER BUTTONS SECTION
+                 This section contains filter buttons that allow users
+                 to filter portfolio items by category.
+                 Categories: All (الكل), Furniture (أثاث), Tables (طاولات),
+                 Doors (أبواب), Bedrooms (غرف نوم)
+                 ============================================ -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up" data-aos-delay="200">
+                <!-- "All" Filter Button - Shows all portfolio items -->
+                <button class="filter-btn active bg-accent text-primary px-6 py-3 rounded-full font-medium transition-all hover:shadow-lg hover:shadow-accent/30" 
+                        data-filter="all">
+                    <i class="fas fa-th-large ml-2"></i>
+                    الكل
+                </button>
+                
+                <!-- "Furniture" Filter Button - Shows أثاث items -->
+                <button class="filter-btn bg-white/10 text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-white/20 hover:shadow-lg" 
+                        data-filter="furniture">
+                    <i class="fas fa-couch ml-2"></i>
+                    أثاث
+                </button>
+                
+                <!-- "Tables" Filter Button - Shows طاولات items -->
+                <button class="filter-btn bg-white/10 text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-white/20 hover:shadow-lg" 
+                        data-filter="tables">
+                    <i class="fas fa-table ml-2"></i>
+                    طاولات
+                </button>
+                
+                <!-- "Doors" Filter Button - Shows أبواب items -->
+                <button class="filter-btn bg-white/10 text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-white/20 hover:shadow-lg" 
+                        data-filter="doors">
+                    <i class="fas fa-door-open ml-2"></i>
+                    أبواب
+                </button>
+                
+                <!-- "Bedrooms" Filter Button - Shows غرف نوم items -->
+                <button class="filter-btn bg-white/10 text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-white/20 hover:shadow-lg" 
+                        data-filter="bedrooms">
+                    <i class="fas fa-bed ml-2"></i>
+                    غرف نوم
+                </button>
+            </div>
+            
+            <!-- ============================================
+                 PORTFOLIO GALLERY SECTION
+                 This section displays portfolio items in a grid layout.
+                 Each item has a data-category attribute that matches
+                 the filter buttons for filtering functionality.
+                 
+                 Categories:
+                 - furniture: أثاث (General furniture pieces)
+                 - tables: طاولات (Tables of various types)
+                 - doors: أبواب (Doors - entrance, interior, etc.)
+                 - bedrooms: غرف نوم (Bedroom furniture sets)
+                 ============================================ -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="portfolioGallery">
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 1: Furniture - Custom Sofa
+                     Category: أثاث (Furniture)
+                     Image: Modern sofa with wooden accents
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="furniture" 
+                     data-aos="fade-up" 
+                     data-aos-delay="100">
+                    <!-- Image with hover zoom effect -->
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" 
+                         alt="أثاث sofa حديث" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <!-- Overlay with project details -->
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">أثاث</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">أريكة مخصصة</h3>
+                            <p class="text-white/70 text-sm mb-3">تصميم عصري بأناقة خشبية</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 2: Tables - Dining Table
+                     Category: طاولات (Tables)
+                     Image: Wooden dining table
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="tables" 
+                     data-aos="fade-up" 
+                     data-aos-delay="150">
+                    <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&q=80" 
+                         alt="طاولة طعام خشبية" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">طاولات</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">طاولة طعام كبيرة</h3>
+                            <p class="text-white/70 text-sm mb-3">خشب الأرز الطبيعي</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 3: Doors - Entrance Door
+                     Category: أبواب (Doors)
+                     Image: Ornate wooden entrance door
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="doors" 
+                     data-aos="fade-up" 
+                     data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" 
+                         alt="باب مدخل عربي" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">أبواب</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">باب مدخل</h3>
+                            <p class="text-white/70 text-sm mb-3">نقش عربي يدوي</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 4: Bedrooms - Master Bedroom
+                     Category: غرف نوم (Bedrooms)
+                     Image: Luxurious bedroom furniture set
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="bedrooms" 
+                     data-aos="fade-up" 
+                     data-aos-delay="250">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80" 
+                         alt="غرفة نوم فاخرة" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">غرف نوم</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">غرفة نوم ملكية</h3>
+                            <p class="text-white/70 text-sm mb-3">تشطيب بالذهب الحقيقي</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 5: Furniture - TV Console
+                     Category: أثاث (Furniture)
+                     Image: Wooden TV console unit
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="furniture" 
+                     data-aos="fade-up" 
+                     data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" 
+                         alt="وحدة تلفزيون خشبية" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">أثاث</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">وحدة تلفزيون</h3>
+                            <p class="text-white/70 text-sm mb-3">تصميم عصري مدمج</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 6: Tables - Coffee Table
+                     Category: طاولات (Tables)
+                     Image: Wooden coffee table
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="tables" 
+                     data-aos="fade-up" 
+                     data-aos-delay="350">
+                    <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&q=80" 
+                         alt="طاولة قهوة خشبية" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">طاولات</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">طاولة قهوة</h3>
+                            <p class="text-white/70 text-sm mb-3">تصميمnordic حديث</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 7: Doors - Interior Door
+                     Category: أبواب (Doors)
+                     Image: Interior wooden door
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="doors" 
+                     data-aos="fade-up" 
+                     data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80" 
+                         alt="باب داخلي كلاسيكي" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">أبواب</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">باب داخلي</h3>
+                            <p class="text-white/70 text-sm mb-3">تصميم كلاسيكي أنيق</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 8: Bedrooms - Kids Room
+                     Category: غرف نوم (Bedrooms)
+                     Image: Kids bedroom furniture
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="bedrooms" 
+                     data-aos="fade-up" 
+                     data-aos-delay="450">
+                    <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=600&q=80" 
+                         alt="غرفة نوم أطفال" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">غرف نوم</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">غرفة أطفال</h3>
+                            <p class="text-white/70 text-sm mb-3">تصميم مرح وآمن</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 9: Furniture - Bookshelf
+                     Category: أثاث (Furniture)
+                     Image: Wooden bookshelf
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="furniture" 
+                     data-aos="fade-up" 
+                     data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1594620302200-9a762244a156?w=600&q=80" 
+                         alt="رف كتب خشبي" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">أثاث</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">رف كتب</h3>
+                            <p class="text-white/70 text-sm mb-3">تصميم عصري مودولر</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 10: Tables - Side Table
+                     Category: طاولات (Tables)
+                     Image: Wooden side table
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="tables" 
+                     data-aos="fade-up" 
+                     data-aos-delay="550">
+                    <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?w=600&q=80" 
+                         alt="طاولة جانبية" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">طاولات</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">طاولة جانبية</h3>
+                            <p class="text-white/70 text-sm mb-3">تصميم صغير أنيق</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 11: Doors - French Doors
+                     Category: أبواب (Doors)
+                     Image: French style wooden doors
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="doors" 
+                     data-aos="fade-up" 
+                     data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" 
+                         alt="باب فرنسي" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">أبواب</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">باب فرنسي</h3>
+                            <p class="text-white/70 text-sm mb-3">زجاج وألمنيوم</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================
+                     PORTFOLIO ITEM 12: Bedrooms - Guest Room
+                     Category: غرف نوم (Bedrooms)
+                     Image: Guest bedroom furniture
+                     ============================================ -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer" 
+                     data-category="bedrooms" 
+                     data-aos="fade-up" 
+                     data-aos-delay="650">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80" 
+                         alt="غرفة ضيوف" 
+                         class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="text-center p-4">
+                            <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-sm mb-2">غرف نوم</span>
+                            <h3 class="text-xl font-bold text-white mb-2 heading-font">غرفة ضيوف</h3>
+                            <p class="text-white/70 text-sm mb-3">تصميم مريح وأنيق</p>
+                            <span class="inline-block px-4 py-2 border border-accent text-accent rounded-full text-sm hover:bg-accent hover:text-primary transition-all">
+                                عرض التفاصيل
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- ============================================
+                 NO RESULTS MESSAGE
+                 This message is displayed when no items match
+                 the selected filter category.
+                 ============================================ -->
+            <div id="noResults" class="hidden text-center py-12">
+                <i class="fas fa-search text-6xl text-white/20 mb-4"></i>
+                <p class="text-white/60 text-lg">لا توجد نتائج لهذه الفئة</p>
+                <p class="text-white/40 text-sm">جرب اختيار فئة أخرى</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-[#FDFBF7] py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 heading-font" data-aos="fade-up">
+                    هل لديك فكرة تريد تحويلها إلى حقيقة؟
+                </h2>
+                <p class="text-lg text-primary/70 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    تواصل معنا·· سنحول أحلامك إلى تحف فنية خشبية
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
+                    <a href="index.html#contact" class="btn-glow bg-accent text-primary px-10 py-4 rounded-2xl font-bold text-lg">
+                        <i class="fas fa-phone ml-2"></i>
+                        تواصل معنا
+                    </a>
+                    <a href="index.html" class="btn-glow bg-transparent border-2 border-primary text-primary px-10 py-4 rounded-2xl font-bold text-lg hover:bg-primary hover:text-white transition-all">
+                        <i class="fas fa-home ml-2"></i>
+                        العودة للرئيسية
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a120e] py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
+                            <i class="fas fa-cube text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white heading-font">ورشة النجارة العصرية</h3>
+                            <p class="text-xs text-accent">فن تراثي يتجدد</p>
+                        </div>
+                    </div>
+                    <p class="text-white/60 max-w-md">
+                        منذ أكثر من 20 عاماً·· نُصنع أحلامك في الخشب·· تصاميم فريدة تجمع بين الأصالة والمعاصرة
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#home" class="text-white/60 hover:text-accent transition-colors">الرئيسية</a></li>
+                        <li><a href="index.html#process" class="text-white/60 hover:text-accent transition-colors">حرفتنا</a></li>
+                        <li><a href="portfolio.html" class="text-white/60 hover:text-accent transition-colors">أعمالنا</a></li>
+                        <li><a href="index.html#contact" class="text-white/60 hover:text-accent transition-colors">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Working Hours -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">أوقات العمل</h4>
+                    <ul class="space-y-2 text-white/60">
+                        <li> الأثنين - الخميس</li>
+                        <li class="text-accent"> 8h00 - 19h00 </li>
+                        <li id="current-day-name" class="font-bold text-white"></li>
+                        <li>
+                            <span id="status-badge" class="px-2 py-1 rounded text-sm font-medium">
+                                جاري التحقق...
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Divider -->
+            <div class="border-t border-white/10 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-white/40 text-sm">
+                        &copy;<span id="site-name"></span> All Rights Reserved
+                    </p>
+                    <p class="text-white/40 text-sm">
+                        <i class="text-accent"> Made By el-guemra-br </i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 left-8 w-12 h-12 rounded-full bg-accent text-primary shadow-lg flex items-center justify-center opacity-0 invisible transition-all hover:bg-primary hover:text-accent z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Portfolio Page JavaScript (External) -->
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

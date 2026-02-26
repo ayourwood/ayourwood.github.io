@@ -1,0 +1,472 @@
+/* ================================================
+   WARCHA - Portfolio Page Specific Styles
+   Moroccan Carpentry Workshop
+   ================================================ */
+
+/* ================================================
+   FILTER BUTTONS STYLES
+   Styles for the category filter buttons
+   ================================================ */
+
+/* Base filter button styling */
+.filter-btn {
+    /* White background with transparency */
+    background: rgba(255, 255, 255, 0.1);
+    /* White text color */
+    color: white;
+    /* No border by default */
+    border: none;
+    /* Padding for comfortable click area */
+    padding: 12px 24px;
+    /* Fully rounded corners (pill shape) */
+    border-radius: 9999px;
+    /* Medium font weight */
+    font-weight: 500;
+    /* Pointer cursor to indicate interactivity */
+    cursor: pointer;
+    /* Smooth transition for all property changes */
+    transition: all 0.3s ease;
+    /* Use Tajawal font from the theme */
+    font-family: 'Tajawal', sans-serif;
+    /* Font size */
+    font-size: 1rem;
+    /* Flexbox for icon and text alignment */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Filter button hover state - when user hovers over it */
+.filter-btn:hover {
+    /* Lighten background on hover */
+    background: rgba(255, 255, 255, 0.2);
+    /* Add subtle golden shadow */
+    box-shadow: 0 4px 15px rgba(196, 155, 102, 0.3);
+    /* Slight upward transform for interactive feel */
+    transform: translateY(-2px);
+}
+
+/* Filter button active state - when it's selected */
+.filter-btn.active {
+    /* Accent color background (golden) */
+    background: var(--accent);
+    /* Primary color text (dark brown) */
+    color: var(--primary);
+    /* Stronger shadow when active */
+    box-shadow: 0 4px 20px rgba(196, 155, 102, 0.5);
+    /* Slight scale up when active */
+    transform: scale(1.05);
+}
+
+/* Filter button focus state - for accessibility */
+.filter-btn:focus {
+    /* Golden outline for focus */
+    outline: 2px solid var(--accent);
+    /* Offset for the outline */
+    outline-offset: 2px;
+}
+
+/* Filter button icon styling */
+.filter-btn i {
+    /* Margin between icon and text */
+    margin-left: 8px;
+    /* Font awesome icon size */
+    font-size: 0.9rem;
+}
+
+/* Responsive filter buttons on mobile */
+@media (max-width: 768px) {
+    .filter-btn {
+        /* Smaller padding on mobile */
+        padding: 10px 18px;
+        /* Smaller font size */
+        font-size: 0.875rem;
+    }
+    
+    /* Stack filter buttons in a flex container on mobile */
+    .filter-buttons-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ================================================
+   PORTFOLIO GALLERY STYLES
+   Styles for the portfolio items grid
+   ================================================ */
+
+/* Portfolio item container */
+.portfolio-item {
+    /* Rounded corners */
+    border-radius: 1rem;
+    /* Overflow hidden for image zoom effect */
+    overflow: hidden;
+    /* Cursor pointer to indicate clickable */
+    cursor: pointer;
+    /* Position relative for absolute overlay positioning */
+    position: relative;
+    /* Smooth transition */
+    transition: all 0.4s ease;
+}
+
+/* Portfolio item image */
+.portfolio-item img {
+    /* Full width */
+    width: 100%;
+    /* Fixed height for consistency */
+    height: 18rem;
+    /* Object fit to cover the area */
+    object-fit: cover;
+    /* Smooth zoom transition */
+    transition: transform 0.5s ease;
+}
+
+/* Portfolio item hover - image zoom */
+.portfolio-item:hover img {
+    /* Scale up the image on hover */
+    transform: scale(1.1);
+}
+
+/* Portfolio overlay - hidden by default */
+.portfolio-overlay {
+    /* Absolute positioning to cover the item */
+    position: absolute;
+    inset: 0;
+    /* Dark primary color background with transparency */
+    background: rgba(45, 30, 23, 0.9);
+    /* Flexbox for centering content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Hidden by default */
+    opacity: 0;
+    /* Smooth transition */
+    transition: all 0.3s ease;
+}
+
+/* Portfolio overlay - visible on hover */
+.portfolio-item:hover .portfolio-overlay {
+    /* Show on hover */
+    opacity: 1;
+}
+
+/* Portfolio overlay content */
+.portfolio-overlay .text-center {
+    /* Text alignment */
+    text-align: center;
+    /* Padding for content */
+    padding: 1rem;
+}
+
+/* Category badge in overlay */
+.portfolio-overlay span:first-child {
+    /* Inline block for proper sizing */
+    display: inline-block;
+    /* Padding for badge */
+    padding: 4px 12px;
+    /* Semi-transparent accent background */
+    background: rgba(196, 155, 102, 0.2);
+    /* Accent text color */
+    color: var(--accent);
+    /* Rounded corners */
+    border-radius: 9999px;
+    /* Small font size */
+    font-size: 0.875rem;
+    /* Bottom margin */
+    margin-bottom: 0.5rem;
+}
+
+/* Portfolio item title */
+.portfolio-overlay h3 {
+    /* White text */
+    color: white;
+    /* Bold font */
+    font-weight: bold;
+    /* Font size */
+    font-size: 1.25rem;
+    /* Bottom margin */
+    margin-bottom: 0.5rem;
+    /* Use heading font */
+    font-family: 'Amiri', serif;
+}
+
+/* Portfolio item description */
+.portfolio-overlay p {
+    /* White text with transparency */
+    color: rgba(255, 255, 255, 0.7);
+    /* Small font size */
+    font-size: 0.875rem;
+    /* Bottom margin */
+    margin-bottom: 0.75rem;
+}
+
+/* View details button in overlay */
+.portfolio-overlay span:last-child {
+    /* Inline block */
+    display: inline-block;
+    /* Padding */
+    padding: 8px 16px;
+    /* Border styling */
+    border: 1px solid var(--accent);
+    /* Accent text color */
+    color: var(--accent);
+    /* Rounded corners */
+    border-radius: 9999px;
+    /* Small font size */
+    font-size: 0.875rem;
+    /* Transition for hover effect */
+    transition: all 0.3s ease;
+}
+
+/* View details button hover */
+.portfolio-overlay span:last-child:hover {
+    /* Accent background on hover */
+    background: var(--accent);
+    /* Primary text color on hover */
+    color: var(--primary);
+}
+
+/* ================================================
+   PORTFOLIO GRID LAYOUT
+   Grid system for portfolio items
+   ================================================ */
+
+/* Portfolio gallery container */
+#portfolioGallery {
+    /* CSS Grid */
+    display: grid;
+    /* Responsive columns */
+    grid-template-columns: repeat(1, 1fr);
+    /* Gap between items */
+    gap: 1.5rem;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+    #portfolioGallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+    #portfolioGallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large desktop: 4 columns */
+@media (min-width: 1280px) {
+    #portfolioGallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ================================================
+   NO RESULTS MESSAGE
+   Styles for when no items match filter
+   ================================================ */
+
+/* No results container */
+#noResults {
+    /* Center text alignment */
+    text-align: center;
+    /* Vertical padding */
+    padding: 3rem 0;
+}
+
+/* Hidden by default - shown via JavaScript */
+#noResults.hidden {
+    display: none;
+}
+
+/* Search icon */
+#noResults i {
+    /* Large font size */
+    font-size: 3rem;
+    /* White with very low opacity */
+    color: rgba(255, 255, 255, 0.2);
+    /* Bottom margin */
+    margin-bottom: 1rem;
+}
+
+/* No results message text */
+#noResults p:first-of-type {
+    /* White with medium opacity */
+    color: rgba(255, 255, 255, 0.6);
+    /* Larger font size */
+    font-size: 1.125rem;
+}
+
+/* No results hint text */
+#noResults p:last-of-type {
+    /* White with low opacity */
+    color: rgba(255, 255, 255, 0.4);
+    /* Small font size */
+    font-size: 0.875rem;
+}
+
+/* ================================================
+   FADE IN ANIMATION
+   Animation for filtered items appearing
+   ================================================ */
+
+/* Keyframes for fade in animation */
+@keyframes fadeIn {
+    /* Start state */
+    from {
+        /* Invisible */
+        opacity: 0;
+        /* Slightly down */
+        transform: translateY(20px);
+    }
+    /* End state */
+    to {
+        /* Fully visible */
+        opacity: 1;
+        /* Normal position */
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade in animation to portfolio items */
+.portfolio-item {
+    animation: fadeIn 0.5s ease both;
+}
+
+/* ================================================
+   PORTFOLIO PAGE HERO SECTION
+   Specific styles for portfolio hero
+   ================================================ */
+
+/* Portfolio hero minimum height */
+.portfolio-hero {
+    /* 60% of viewport height */
+    min-height: 60vh;
+    /* Flexbox for vertical centering */
+    display: flex;
+    align-items: center;
+    /* Relative positioning */
+    position: relative;
+    /* Background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Parallax effect */
+    background-attachment: fixed;
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+    /* Flexbox for items */
+    display: flex;
+    align-items: center;
+    /* Gap between items */
+    gap: 0.5rem;
+    /* White with medium opacity */
+    color: rgba(255, 255, 255, 0.6);
+    /* Font size */
+    font-size: 0.875rem;
+}
+
+/* Breadcrumb link */
+.breadcrumb a {
+    /* White with medium opacity */
+    color: rgba(255, 255, 255, 0.6);
+    /* Transition for hover */
+    transition: color 0.3s ease;
+}
+
+/* Breadcrumb link hover */
+.breadcrumb a:hover {
+    /* Accent color on hover */
+    color: var(--accent);
+}
+
+/* Breadcrumb separator icon */
+.breadcrumb i {
+    /* Small font size */
+    font-size: 0.625rem;
+    /* White with low opacity */
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Breadcrumb current page */
+.breadcrumb .current {
+    /* Accent color */
+    color: var(--accent);
+}
+
+/* ================================================
+   RESPONSIVE ADJUSTMENTS
+   Styles for different screen sizes
+   ================================================ */
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+    /* Smaller grid gap */
+    #portfolioGallery {
+        gap: 1rem;
+    }
+    
+    /* Smaller image height on mobile */
+    .portfolio-item img {
+        height: 14rem;
+    }
+    
+    /* Smaller title on mobile */
+    .portfolio-overlay h3 {
+        font-size: 1rem;
+    }
+    
+    /* Smaller description on mobile */
+    .portfolio-overlay p {
+        font-size: 0.75rem;
+    }
+}
+
+/* ================================================
+   PORTFOLIO CARD SHADOW EFFECTS
+   Enhanced shadows for depth
+   ================================================ */
+
+/* Default portfolio item shadow */
+.portfolio-item {
+    /* Subtle shadow */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Portfolio item hover shadow */
+.portfolio-item:hover {
+    /* Enhanced shadow on hover */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================================
+   CATEGORY BADGE STYLES
+   Small labels showing category on cards
+   ================================================ */
+
+/* Category badge base */
+.category-badge {
+    /* Inline block */
+    display: inline-block;
+    /* Padding */
+    padding: 4px 12px;
+    /* Semi-transparent background */
+    background: rgba(196, 155, 102, 0.2);
+    /* Accent text color */
+    color: var(--accent);
+    /* Rounded corners */
+    border-radius: 9999px;
+    /* Small font */
+    font-size: 0.75rem;
+    /* Font weight */
+    font-weight: 500;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Letter spacing */
+    letter-spacing: 0.05em;
+}

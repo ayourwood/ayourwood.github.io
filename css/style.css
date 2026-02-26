@@ -1,0 +1,236 @@
+/* ================================================
+   WARCHA - Moroccan Carpentry Workshop
+   Custom Styles
+   ================================================ */
+
+:root {
+    --primary: #2D1E17;
+    --accent: #cfaa79dc;
+    --background: #e7d77a;
+    --litteltitle: #eee9e2;
+    --subtitle: #ffffff;
+    /*--col: #ffd69c;*/
+    color-scheme: light;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--background);
+    color: var(--primary);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .heading-font {
+    font-family: 'Amiri', serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar.scrolled {
+    background: rgba(45, 30, 23, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Parallax */
+.hero-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Gradient Overlay */
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(45, 30, 23, 0.9) 0%, rgba(45, 30, 23, 0.7) 50%, rgba(196, 155, 102, 0.3) 100%);
+}
+
+/* CTA Button with Glow */
+.btn-glow {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.btn-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-glow:hover::before {
+    left: 100%;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 30px rgba(196, 155, 102, 0.5), 0 0 60px rgba(196, 155, 102, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgba(45, 30, 23, 0.25);
+}
+
+/* Portfolio Overlay */
+.portfolio-overlay {
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* Process Steps */
+.process-step {
+    position: relative;
+}
+
+.process-step::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -30%;
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    transform: translateY(-50%);
+}
+
+.process-step:last-child::after {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .process-step::after {
+        display: none;
+    }
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f6f3 100%);
+    border: 1px solid rgba(196, 155, 102, 0.2);
+}
+
+/* Custom Animation Classes */
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Wood Texture Pattern */
+.wood-pattern {
+    background-image: url("../assets/images/wood-pattern.png");
+    background-repeat: repeat;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+/* Section Padding */
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Form Styles */
+.form-input:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+/* Loading Animation */
+.loader {
+    border: 3px solid rgba(196, 155, 102, 0.3);
+    border-radius: 50%;
+    border-top: 3px solid var(--accent);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success Message */
+.success-message {
+    background: linear-gradient(145deg, #d4edda 0%, #c3e6cb 100%);
+    border: 1px solid #28a745;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Error Message */
+.error-message {
+    background: linear-gradient(145deg, #f8d7da 0%, #f5c6cb 100%);
+    border: 1px solid #dc3545;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-parallax {
+        background-attachment: scroll;
+    }
+    
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
