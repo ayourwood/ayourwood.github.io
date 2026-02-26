@@ -2,57 +2,46 @@
 
 
 <p align="center">
-  <img src="https://github.com/ayourwood.png" alt="Profile Picture" width="180" style="border-radius: 50%;" />
+  <img src="https://github.com/ayourwood.png" alt="Profile Picture" width="180" style="borderradius: 50%;" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/followers/ayourwood?label=Followers&style=social" alt="GitHub Followers"/> 
-<p align="center"> 
-  <img src="https://img.shields.io/badge/Developer-green?style=flat-square" alt="webpage"/>
-</p>
+
 <div align="center">
-
-  <a href="http://ayourwood.github.io" target="_black" style="display:inline-flex; justify-content:center; align-items:center; width:55px; height:55px; background:#E4405F; border-radius:50%; margin-right:30px;">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" width="24" />
-  </a>
-
-</div>        
-
+  
 <p align="center">
   <sub>
- # Woodworking
+    
+# Woodworking
 
 Custom handcrafted woodwork and furniture.
 
-## About
+# About
 
 I create custom pieces using traditional woodworking techniques and premium materials. Each project is tailored to client specifications.
 
-## Services
+# Services
 
 - Custom furniture
 - Cabinetry
 - Decorative woodwork
 - Restoration and refinishing
 
-## Portfolio
+# Portfolio
 
 View completed projects and galleries on the main website.
 
-## Contact
+# Contact
 
 - Email: [ayourwood.gmail.com]
-- Phone: []
+- Phone: [+2126XXXXXXXX]
 - Location: [location]
-- Location: [http://ayourwood.github.io]
+- Website: [ayourwood](https://ayourwood.github.io)
 
-## Social
+# Social
 
-- [Instagram](#)
-- [Facebook](#)
-- [Pinterest](#)
-
----
+[Instagram](https://www.instagram.com)
+[Facebook](https://www.facebook.com)
+[Pinterest](https://www.pinterest.com)
 
 
   </sub>
