@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Build output (CSS is generated during build)
+css/output.css
+
+# npm logs
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db

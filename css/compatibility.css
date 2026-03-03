@@ -1,0 +1,42 @@
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    appearance: button;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+}
+
+input[type="search"] {
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+    appearance: auto;
+    -webkit-appearance: auto;
+}
+
+::-webkit-file-upload-button {
+    appearance: button;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+}
+
+.line-clamp-none {
+    line-clamp: none !important;
+    -webkit-line-clamp: none;
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+* {
+    -webkit-appearance: initial;
+    -moz-appearance: initial;
+    appearance: initial;
+}

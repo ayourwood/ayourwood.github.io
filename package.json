@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "ayourwood-website",
+  "version": "1.0.0",
+  "description": "Ayour Woodworking Workshop - Modern Carpentry Website",
+  "scripts": {
+    "build:css": "tailwindcss -i ./input.css -o ./css/output.css --minify",
+    "watch:css": "tailwindcss -i ./input.css -o ./css/output.css --watch",
+    "dev": "npm run watch:css",
+    "build": "npm run build:css"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "responsive"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

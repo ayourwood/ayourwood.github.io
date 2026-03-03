@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="معرض أعمال ورشة ايور للنجارة - تصاميم خشبية فاخرة">
+    <title>أعمالنا | ورشة ايور للنجارة</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/output.css">
+
+    <link rel="stylesheet" href="css/compatibility.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="wood-pattern">
+
+    <div id="pageLoader" class="page-loader">
+        <div class="loader-container">
+            <div class="loader-logo">
+                <img src="assets/logo_icon/logomoon.png" alt="ورشة ايور للنجارة">
+            </div>
+            <div class="loader-text">
+                <p>جاري تحميل المعرض...</p>
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 py-4" id="navbar">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity duration-300">
+                    <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center hover:shadow-lg hover:shadow-accent/50 transition-all duration-300">
+                        <img src="assets/logo_icon/logomoon.png" alt="logo" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-white/90 heading-font hover:text-accent transition-colors duration-300">ورشة ايور للنجارة</h1>
+                        <p class="text-xs text-white/60">فن تراثي يتجدد</p>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link text-white/80 hover:text-accent transition-all duration-300 relative">الرئيسية</a>
+                    <a href="index.html#process" class="nav-link text-white/80 hover:text-accent transition-all duration-300 relative">حرفتنا</a>
+                    <a href="portfolio.html" class="nav-link text-accent transition-all duration-300 relative">أعمالنا</a>
+                    <a href="index.html#testimonials" class="nav-link text-white/80 hover:text-accent transition-all duration-300 relative">آراء العملاء</a>
+                    <a href="index.html#contact" class="nav-link text-white/80 hover:text-accent transition-all duration-300 relative">اتصل بنا</a>
+
+                    <a href="https://wa.me/+212710169569" target="_blank"
+                        class="nav-btn-whatsapp btn-glow bg-accent text-white px-6 py-2 rounded-full font-medium flex items-center gap-2 hover:shadow-lg hover:shadow-accent/50 transition-all duration-300">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <button class="md:hidden text-white text-2xl transition-all duration-300 hover:text-accent hover:scale-110" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
+
+    <div class="mobile-menu fixed top-0 right-0 w-1/2 min-w-[280px] h-full bg-primary z-[70] p-8 shadow-2xl" id="mobileMenu">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-xl text-white heading-font">القائمة</h2>
+            <button id="closeMenuBtn" class="text-white text-2xl transition-all duration-300 hover:text-accent hover:scale-110 hover:rotate-90">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="flex flex-col gap-6">
+            <a href="index.html" class="mobile-nav-link text-white/80 hover:text-accent text-lg py-2 border-b border-white/10 transition-colors duration-300">الرئيسية</a>
+            <a href="index.html#process" class="mobile-nav-link text-white/80 hover:text-accent text-lg py-2 border-b border-white/10 transition-colors duration-300">حرفتنا</a>
+            <a href="portfolio.html" class="mobile-nav-link text-accent text-lg py-2 border-b border-white/10 transition-colors duration-300">أعمالنا</a>
+            <a href="index.html#testimonials" class="mobile-nav-link text-white/80 hover:text-accent text-lg py-2 border-b border-white/10 transition-colors duration-300">آراء العملاء</a>
+            <a href="index.html#contact" class="mobile-nav-link text-white/80 hover:text-accent text-lg py-2 border-b border-white/10 transition-colors duration-300">اتصل بنا</a>
+            <a href="https://wa.me/212710169569" target="_blank"
+                class="mobile-btn-whatsapp btn-glow bg-accent text-white px-6 py-3 rounded-full font-medium text-center mt-4 inline-flex items-center justify-center gap-2 hover:shadow-lg transition-all duration-300">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <section class="portfolio-hero min-h-[60vh] flex items-center justify-center relative" style="background-image: url('assets/images/hero-wood.jpg')">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="container mx-auto px-6 relative z-10 pt-20">
+            <div class="text-center">
+                <span class="text-white/70 font-medium tracking-wider" data-aos="fade-up">معرض إبداعاتنا</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-accent mt-4 heading-font" data-aos="fade-up" data-aos-delay="200">أعمالنا المميزة</h1>
+                <p class="text-xl text-white/80 mt-6 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+                    تشكيلة متنوعة من التصاميم الفاخرة التي تجمع بين الأصالة والمعاصرة
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary py-20 relative overflow-hidden">
+        <div class="portfolio-particles">
+            <div class="portfolio-particle" style="left: 8%; animation-delay: 0s;">
+                <svg width="30" height="30" viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>
+            </div>
+            <div class="portfolio-particle" style="left: 25%; animation-delay: 5s;">
+                <svg width="25" height="25" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+            </div>
+            <div class="portfolio-particle" style="left: 42%; animation-delay: 10s;">
+                <svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 17h18v2H3v-2z"/></svg>
+            </div>
+            <div class="portfolio-particle" style="left: 58%; animation-delay: 15s;">
+                <svg width="32" height="32" viewBox="0 0 24 24"><path d="M12 3c-1.1 0-2 .9-2 2v4H6v2h4v4c0 1.1.9 2 2 2h4v-4h4v-2h-4V5c0-1.1-.9-2-2-2z"/></svg>
+            </div>
+            <div class="portfolio-particle" style="left: 75%; animation-delay: 20s;">
+                <svg width="26" height="26" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+            </div>
+            <div class="portfolio-particle" style="left: 92%; animation-delay: 25s;">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>
+            </div>
+        </div>
+
+        <div class="portfolio-corner top-left"></div>
+        <div class="portfolio-corner top-right"></div>
+        <div class="portfolio-corner bottom-left"></div>
+        <div class="portfolio-corner bottom-right"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+                <button class="filter-btn active bg-accent text-primary px-6 py-2 rounded-full font-medium" data-filter="all">
+                    الكل
+                </button>
+                <button class="filter-btn bg-white/10 text-white px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-primary transition-all" data-filter="kitchen">
+                    مطابخ
+                </button>
+                <button class="filter-btn bg-white/10 text-white px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-primary transition-all" data-filter="bedroom">
+                    غرف نوم
+                </button>
+                <button class="filter-btn bg-white/10 text-white px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-primary transition-all" data-filter="living">
+                    صالات
+                </button>
+                <button class="filter-btn bg-white/10 text-white px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-primary transition-all" data-filter="door">
+                    أبواب
+                </button>
+                <button class="filter-btn bg-white/10 text-white px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-primary transition-all" data-filter="decor">
+                    ديكور
+                </button>
+            </div>
+
+            <div id="noResults" class="hidden text-center py-16">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 mb-6">
+                    <i class="fas fa-search text-4xl text-accent"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">لا توجد نتائج</h3>
+                <p class="text-white/60">لم يتم العثور على عناصر في هذه الفئة</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="portfolioGallery">
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-category="kitchen">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">مطبخ</span>
+                    <img src="assets/images/kitchen-1.jpg" alt="مطبخ مغربي عصري" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">مطبخ مغربي عصري</h3>
+                        <p class="text-accent portfolio-desc">تصميم عصري بلمسة تراثية</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="100" data-category="kitchen">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">مطبخ</span>
+                    <img src="assets/images/kitchen-2.jpg" alt="مطبخ مفتوح" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">مطبخ مفتوح</h3>
+                        <p class="text-accent portfolio-desc">تصميم حديث عصري</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="200" data-category="bedroom">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">غرفة نوم</span>
+                    <img src="assets/images/bedroom-1.jpg" alt="غرفة نوم فاخرة" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">غرفة نوم ملكية</h3>
+                        <p class="text-accent portfolio-desc">تشطيب بالذهب الحقيقي</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="300" data-category="bedroom">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">غرفة نوم</span>
+                    <img src="assets/images/bedroom-master.jpg" alt="غرفة نوم رئيسية" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">غرفة نوم رئيسية</h3>
+                        <p class="text-accent portfolio-desc">تصميم أنيق وفخم</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="400" data-category="bedroom">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">غرفة نوم</span>
+                    <img src="assets/images/bedroom-guest.jpg" alt="غرفة نوم للضيوف" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">غرفة ضيوف</h3>
+                        <p class="text-accent portfolio-desc">استقبال مريح للضيوف</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="500" data-category="bedroom">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">غرفة نوم</span>
+                    <img src="assets/images/bedroom-kids.jpg" alt="غرفة نوم أطفال" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">غرفة أطفال</h3>
+                        <p class="text-accent portfolio-desc">تصميم مرح وآمن</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="600" data-category="living">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">صالة</span>
+                    <img src="assets/images/living-room.jpg" alt="صالة استقبال" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">صالة استقبال</h3>
+                        <p class="text-accent portfolio-desc">تصميم أنيق ومريح</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="700" data-category="living">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">صالة</span>
+                    <img src="assets/images/sofa.jpg" alt="أريكة كلاسيكية" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">أريكة كلاسيكية</h3>
+                        <p class="text-accent portfolio-desc">راحة وفخامة</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="800" data-category="door">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">باب</span>
+                    <img src="assets/images/door-entrance.jpg" alt="باب مدخل" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">باب مدخل</h3>
+                        <p class="text-accent portfolio-desc">ترحيب بالضيوف</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="900" data-category="door">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">باب</span>
+                    <img src="assets/images/door-french.jpg" alt="باب فرنسي" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">باب فرنسي</h3>
+                        <p class="text-accent portfolio-desc">أناقة شفافة</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="1000" data-category="door">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">باب</span>
+                    <img src="assets/images/door-interior.jpg" alt="باب داخلي" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-door-closed"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">باب داخلي</h3>
+                        <p class="text-accent portfolio-desc">خصوصية وأناقة</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="1100" data-category="decor">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">ديكور</span>
+                    <img src="assets/images/decor-1.jpg" alt="ديكور مخصص" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">وحدة جدارية مزخرفة</h3>
+                        <p class="text-accent portfolio-desc">نقش مغربي يدوي</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="1200" data-category="decor">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">ديكور</span>
+                    <img src="assets/images/decor-2.jpg" alt="خزانة كلاسيكية" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-dungeon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">خزانة كلاسيكية</h3>
+                        <p class="text-accent portfolio-desc">عتيقة بتصميم حديث</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-category="living">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">صالة</span>
+                    <img src="assets/images/tv-console.jpg" alt="وحدة تلفزيون" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">وحدة تلفزيون</h3>
+                        <p class="text-accent portfolio-desc">تصميم عصري</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-category="living">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">صالة</span>
+                    <img src="assets/images/dining-table.jpg" alt="طاولة طعام" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">طاولة طعام</h3>
+                        <p class="text-accent portfolio-desc">لم شمل العائلة</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-category="decor">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">ديكور</span>
+                    <img src="assets/images/coffee-table.jpg" alt="طاولة قهوة" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">طاولة قهوة</h3>
+                        <p class="text-accent portfolio-desc">أناقة في التفاصيل</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-category="decor">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">ديكور</span>
+                    <img src="assets/images/bookshelf.jpg" alt="رف كتب" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">رف كتب</h3>
+                        <p class="text-accent portfolio-desc">مساحة للثقافة</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-enhanced-item group relative overflow-hidden rounded-2xl cursor-pointer" data-aos="fade-up" data-category="decor">
+                    <div class="portfolio-glow-border"></div>
+                    <span class="portfolio-category-badge">ديكور</span>
+                    <img src="assets/images/table-side.jpg" alt="طاولة جانبية" class="w-full h-72 object-cover" onerror="this.src='https://via.placeholder.com/400x300'">
+                    <div class="portfolio-enhanced-overlay">
+                        <div class="portfolio-icon-wrapper">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">طاولة جانبية</h3>
+                        <p class="text-accent portfolio-desc">عملية وأنيقة</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16" data-aos="fade-up">
+                <a href="index.html" class="cta-btn cta-btn-solid w-full sm:w-auto bg-white text-primary px-10 py-4 rounded-2xl font-bold text-lg inline-flex items-center justify-center gap-3 hover:bg-accent hover:text-white transition-all duration-300 shadow-lg relative overflow-hidden group">
+                    <span class="btn-glow-inner"></span>
+                    <i class="fas fa-home text-lg group-hover:scale-125 transition-transform"></i>
+                    <span>العودة للرئيسية</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a120e] border-t border-accent/20 relative overflow-hidden -mt-1">
+        <div class="footer-divider">
+            <div class="footer-divider-line"></div>
+        </div>
+        <div class="footer-particles">
+            <div class="footer-particle" style="left: 5%; animation-delay: 0s;">
+                <svg width="25" height="25" viewBox="0 0 24 24">
+                    <path d="M12 2L2 22h20L12 2z" />
+                </svg>
+            </div>
+            <div class="footer-particle" style="left: 20%; animation-delay: 5s;">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M3 17h18v2H3v-2z" />
+                </svg>
+            </div>
+            <div class="footer-particle" style="left: 35%; animation-delay: 10s;">
+                <svg width="28" height="28" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+                </svg>
+            </div>
+            <div class="footer-particle" style="left: 50%; animation-delay: 15s;">
+                <svg width="22" height="22" viewBox="0 0 24 24">
+                    <path d="M12 3c-1.1 0-2 .9-2 2v4H6v2h4v4c0 1.1.9 2 2 2h4v-4h4v-2h-4V5c0-1.1-.9-2-2-2z" />
+                </svg>
+            </div>
+            <div class="footer-particle" style="left: 65%; animation-delay: 20s;">
+                <svg width="26" height="26" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" />
+                </svg>
+            </div>
+            <div class="footer-particle" style="left: 80%; animation-delay: 25s;">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 013 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="footer-corner top-left"></div>
+        <div class="footer-corner bottom-right"></div>
+
+        <div class="py-16 relative z-10">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-12 mb-12 footer-grid">
+                    <div class="md:col-span-2 footer-grid-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center gap-3 mb-6 group">
+                            <div
+                                class="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center shadow-lg hover:shadow-xl hover:shadow-accent/40 transition-all transform group-hover:scale-110 rotate-12">
+                                <img src="assets/logo_icon/logomoon.png" alt="logo" class="w-full h-full object-contain">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-2xl font-bold text-white heading-font group-hover:text-accent transition-colors">
+                                    ورشة ايور للنجارة</h3>
+                                <p class="text-sm text-accent font-medium">فن تراثي يتجدد</p>
+                            </div>
+                        </div>
+                        <p class="text-white/70 leading-relaxed mb-6 hover:text-white transition-colors">
+                            منذ أكثر من 20 عاماً نُصنع أحلامك في الخشب.. تصاميم فريدة تجمع بين الأصالة والمعاصرة. نخدم
+                            العملاء برضا وجودة عالية في كل مشروع.
+                        </p>
+                        <div class="footer-brand-decoration">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="footer-grid-item" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2">
+                            <i class="fas fa-link text-accent"></i>
+                            روابط سريعة
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><a href="#home"
+                                    class="text-white/70 hover:text-accent flex items-center gap-2 transition-all duration-300 group footer-link">
+                                    <span class="footer-link-icon">←</span>
+                                    <span>الرئيسية</span>
+                                </a></li>
+                            <li><a href="#process"
+                                    class="text-white/70 hover:text-accent flex items-center gap-2 transition-all duration-300 group footer-link">
+                                    <span class="footer-link-icon">←</span>
+                                    <span>حرفتنا</span>
+                                </a></li>
+                            <li><a href="#portfolio"
+                                    class="text-white/70 hover:text-accent flex items-center gap-2 transition-all duration-300 group footer-link">
+                                    <span class="footer-link-icon">←</span>
+                                    <span>أعمالنا</span>
+                                </a></li>
+                            <li><a href="#testimonials"
+                                    class="text-white/70 hover:text-accent flex items-center gap-2 transition-all duration-300 group footer-link">
+                                    <span class="footer-link-icon">←</span>
+                                    <span>آراء العملاء</span>
+                                </a></li>
+                            <li><a href="#contact"
+                                    class="text-white/70 hover:text-accent flex items-center gap-2 transition-all duration-300 group footer-link">
+                                    <span class="footer-link-icon">←</span>
+                                    <span>اتصل بنا</span>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-grid-item" data-aos="fade-up" data-aos-delay="300">
+                        <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2">
+                            <i class="fas fa-phone text-accent"></i>
+                            تواصل معنا
+                        </h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 footer-contact-item group">
+                                <div class="footer-contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/50 text-xs">الهاتف</p>
+                                    <a href="tel:+212710169569"
+                                        class="text-white group-hover:text-accent transition-colors">
+                                        +212710169569
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 footer-contact-item group">
+                                <div class="footer-contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/50 text-xs">واتسآب</p>
+                                    <a href="https://wa.me/+212710169569" target="_blank"
+                                        class="text-white group-hover:text-accent transition-colors">
+                                        تواصل فوري
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 footer-contact-item group">
+                                <div class="footer-contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/50 text-xs">البريد</p>
+                                    <a href="mailto:ayourwood@gmail.com"
+                                        class="text-white group-hover:text-accent transition-colors break-all">
+                                        ayourwood@gmail.com
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-white/10" data-aos="fade-up" data-aos-delay="400">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h4 class="text-white font-bold mb-6 flex items-center justify-center gap-2">
+                            <i class="fas fa-clock text-accent"></i>
+                            أوقات العمل
+                        </h4>
+                        <ul class="flex flex-wrap justify-center gap-6 text-white/60 footer-hours">
+                            <li class="flex items-center gap-2 hover:text-accent transition-colors">
+                                <span>الأثنين - الخميس</span>
+                                <span class="text-accent font-medium">8h00 - 19h00</span>
+                            </li>
+                            <li class="flex items-center gap-2 hover:text-accent transition-colors">
+                                <span>الجمعة</span>
+                                <span class="text-accent font-medium">9h00 - 14h00</span>
+                            </li>
+                            <li class="flex items-center gap-2 hover:text-accent transition-colors">
+                                <span>السبت</span>
+                                <span class="text-accent font-medium">9h00 - 16h00</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-white/10">
+                            <span id="current-day-name" class="font-bold text-white block"></span>
+                            <span id="status-badge" class="px-3 py-1 rounded text-sm font-medium mt-2 inline-block bg-accent/20 text-accent">
+                                جاري التحقق...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider">
+                <div class="footer-divider-line"></div>
+                <div class="footer-divider-line"></div>
+            </div>
+
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="flex justify-center gap-4">
+                        <a href="https://www.instagram.com/el_guemra_br/" target="_blank"
+                            class="social-icon w-10 h-10 rounded-full bg-white/10 hover:bg-accent flex items-center justify-center text-white hover:text-primary transition-all hover:shadow-lg hover:shadow-accent/40">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank"
+                            class="social-icon w-10 h-10 rounded-full bg-white/10 hover:bg-accent flex items-center justify-center text-white hover:text-primary transition-all hover:shadow-lg hover:shadow-accent/40">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank"
+                            class="social-icon w-10 h-10 rounded-full bg-white/10 hover:bg-accent flex items-center justify-center text-white hover:text-primary transition-all hover:shadow-lg hover:shadow-accent/40">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank"
+                            class="social-icon w-10 h-10 rounded-full bg-white/10 hover:bg-accent flex items-center justify-center text-white hover:text-primary transition-all hover:shadow-lg hover:shadow-accent/40">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex justify-center gap-6 text-sm">
+                        <a href="privacy-terms/privacy-policy.html"
+                            class="text-white/60 hover:text-accent transition-colors">سياسة الخصوصية</a>
+                        <span class="text-white/20">|</span>
+                        <a href="privacy-terms/terms-conditions.html"
+                            class="text-white/60 hover:text-accent transition-colors">الشروط والأحكام</a>
+                    </div>
+
+                    <div class="text-center md:text-right">
+                        <p class="text-white/60 text-sm">
+                            &copy; <span class="font-semibold text-accent" id="year">2026</span>
+                            <a href="#home" class="hover:text-accent transition-colors">ورشة ايور للنجارة</a>
+                            <span class="text-white/40">جميع الحقوق محفوظة</span>
+                        </p>
+                        <p class="text-white/50 text-xs mt-2">
+                            من تطوير
+                            <a href="https://github.com/el-guemra-br" target="_blank"
+                                class="text-accent hover:text-accent/80 transition-colors">el-guemra-br</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-1 bg-gradient-to-r from-accent via-accent to-transparent"></div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
