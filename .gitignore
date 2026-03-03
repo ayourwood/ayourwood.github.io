@@ -2,7 +2,7 @@
 node_modules/
 
 # Build output (CSS is generated during build)
-css/output.css
+# css/output.css - Enabled for GitHub Pages deployment
 
 # npm logs
 npm-debug.log*
